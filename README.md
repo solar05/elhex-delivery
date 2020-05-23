@@ -1,6 +1,9 @@
 # ElhexDelivery
+![Elixir CI](https://github.com/solar05/elhex-delivery/workflows/Elixir%20CI/badge.svg)
+# Description
+Postal data parser, for delivery.
+This project uses main benefits of Elixir, such as GenServer and Supervisors.
 
-**TODO: Add description**
 
 ## Installation
 
