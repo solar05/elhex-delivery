@@ -10,6 +10,10 @@ defmodule ElhexDelivery.PostalCode.Navigator do
     GenServer.start_link(__MODULE__, [], name: :postal_code_navigator)
   end
 
+  def init(_) do
+    {:ok, {}}
+  end
+
   def get_distance(from, to) do
     GenServer.call(:postal_code_navigator, {:get_distance, from, to})
   end
