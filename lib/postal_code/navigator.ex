@@ -30,9 +30,10 @@ defmodule ElhexDelivery.PostalCode.Navigator do
         distance = calculate_distance({lat1, long1}, {lat2, long2})
         Cache.set_distance(from, to, distance)
         distance
-      distance -> distance
-    end
 
+      distance ->
+        distance
+    end
   end
 
   defp get_geolocation(postal_code) do
